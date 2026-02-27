@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-8 py-3 bg-brand text-white font-bold rounded-full transition-transform hover:scale-105 active:scale-95 shadow-lg;
+  }
+  .link-underlined {
+    @apply relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand after:transition-all hover:after:w-full;
+  }
+}

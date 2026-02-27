@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnalisation de Totem en Carton : Options PLV Sur-Mesure | Kontfeel</title>
+    <meta name="description"
+        content="Donnez vie à vos idées avec nos options de personnalisation pour totems en carton. Découpe à la forme, accessoires, finitions spéciales et bureau d'études dédié.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': {
+                            DEFAULT: '#e63946',
+                            dark: '#1d3557',
+                            light: '#f1faee',
+                            accent: '#a8dadc',
+                            secondary: '#457b9d',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn-primary {
+                @apply inline-block px-8 py-3 bg-brand text-white font-bold rounded-full transition-transform hover:scale-105 active:scale-95 shadow-lg;
+            }
+            .link-underlined {
+                @apply relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand after:transition-all hover:after:w-full;
+            }
+        }
+    </style>
+    <script src="../../js/components.js" defer></script>
+</head>
+
+<body class="font-sans antialiased bg-white">
+    <div id="header"></div>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Content -->
+            <div class="lg:w-2/3">
+                <nav class="flex mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
+                    <ol class="flex list-none p-0">
+                        <li class="flex items-center">
+                            <a href="../../" class="hover:text-brand">Accueil</a>
+                            <svg class="w-3 h-3 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="../" class="hover:text-brand">Fabrication & Perso</a>
+                            <svg class="w-3 h-3 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-brand font-medium">Personnalisation</span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">La personnalisation
+                    au cœur de
+                    votre projet PLV</h1>
+
+                <div class="prose prose-lg prose-brand max-w-none text-gray-700">
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Chaque marque est unique, chaque campagne a ses objectifs. C'est pourquoi chez Kontfeel, nous
+                        repoussons les limites de la personnalisation pour que votre totem ne ressemble à aucun autre.
+                    </p>
+
+                    <div class="my-12 bg-gray-50 rounded-3xl p-8 border border-gray-100 shadow-inner">
+                        <h3 class="text-2xl font-bold text-brand-dark mb-6">Nos leviers de personnalisation</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 bg-brand text-white rounded-lg flex-shrink-0 flex items-center justify-center font-bold">
+                                    1</div>
+                                <div>
+                                    <h4 class="font-bold text-brand-dark mb-2">Découpe à la forme</h4>
+                                    <p class="text-sm">Nous ne nous arrêtons pas aux formes standard. Frontons découpés,
+                                        silhouettes sur-mesure ou fenêtres intégrées.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 bg-brand text-white rounded-lg flex-shrink-0 flex items-center justify-center font-bold">
+                                    2</div>
+                                <div>
+                                    <h4 class="font-bold text-brand-dark mb-2">Accessoires intégrés</h4>
+                                    <p class="text-sm">Ajoutez des porte-flyers, des étagères pour produits réels, ou
+                                        même des écrans vidéo pour une PLV dynamique.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 bg-brand text-white rounded-lg flex-shrink-0 flex items-center justify-center font-bold">
+                                    3</div>
+                                <div>
+                                    <h4 class="font-bold text-brand-dark mb-2">Finitions spéciales</h4>
+                                    <p class="text-sm">Pelliculage mat/brillant, vernis sélectif, marquage à chaud ou
+                                        textures pour un aspect premium.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 bg-brand text-white rounded-lg flex-shrink-0 flex items-center justify-center font-bold">
+                                    4</div>
+                                <div>
+                                    <h4 class="font-bold text-brand-dark mb-2">Formats XXL</h4>
+                                    <p class="text-sm">Du totem de comptoir de 20cm au totem géant de plus de 2,50m pour
+                                        une émergence maximale.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-brand-dark mb-6">Un bureau d'études à votre écoute</h2>
+                    <p class="mb-6">
+                        La personnalisation ne s'arrête pas au visuel. Notre bureau d'études travaille sur la structure
+                        même de vos supports. Vous avez un produit lourd à présenter ? Nous renforçons le carton. Vous
+                        voulez un montage ultra-rapide sans élastiques ? Nous concevons un système de clipsage
+                        spécifique. Votre projet est modélisé en 3D avant toute mise en fabrication, vous garantissant
+                        un résultat conforme à vos attentes.
+                    </p>
+
+                    <div
+                        class="bg-brand-dark text-white p-8 rounded-3xl mb-12 flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-2/3">
+                            <p class="text-lg font-bold mb-4">Besoin d'un prototype ?</p>
+                            <p class="mb-0 opacity-80 text-sm italic">"Nous pouvons réaliser une maquette en blanc (sans
+                                impression) pour valider le volume et la stabilité de votre projet personnalisé avant le
+                                lancement de la production."</p>
+                        </div>
+                        <div class="md:w-1/3">
+                            <a href="../../contact/"
+                                class="inline-block bg-brand hover:bg-red-700 text-white px-8 py-3 rounded-full font-bold transition-all w-full text-center">Contacter
+                                l'atelier</a>
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-brand-dark mb-6">Le saviez-vous ?</h2>
+                    <p class="mb-6">
+                        Un totem personnalisé peut augmenter le taux de mémorisation de votre message de plus de 40% par
+                        rapport à un support générique. En investissant dans une forme ou une finition unique, vous
+                        renforcez l'ADN de votre marque et vous vous distinguez durablement de la concurrence.
+                    </p>
+                </div>
+
+                <!-- Horizontal links -->
+                <div
+                    class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-brand">
+                    <a href="../prix-devis/" class="flex items-center hover:underline">←
+                        Précédent : Prix & Devis</a>
+                    <a href="../impression-techniques/" class="flex items-center hover:underline">Suivant : Techniques
+                        d'Impression →</a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+                <div id="sidebar"></div>
+            </aside>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+</html>

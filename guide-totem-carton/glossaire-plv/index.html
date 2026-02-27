@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossaire PLV & Totem Carton : Lexique des Termes Techniques | Kontfeel</title>
+    <meta name="description"
+        content="Maîtrisez le vocabulaire de la PLV : fronton, rainurage, micro-cannelure, BAT, CMJN... Notre glossaire complet pour mieux comprendre l'univers du totem carton.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand': {
+                            DEFAULT: '#e63946',
+                            dark: '#1d3557',
+                            light: '#f1faee',
+                            accent: '#a8dadc',
+                            secondary: '#457b9d',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn-primary {
+                @apply inline-block px-8 py-3 bg-brand text-white font-bold rounded-full transition-transform hover:scale-105 active:scale-95 shadow-lg;
+            }
+            .link-underlined {
+                @apply relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand after:transition-all hover:after:w-full;
+            }
+        }
+    </style>
+    <script src="../../js/components.js" defer></script>
+</head>
+
+<body class="font-sans antialiased bg-white">
+    <div id="header"></div>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <!-- Content -->
+            <div class="lg:w-2/3">
+                <nav class="flex mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
+                    <ol class="flex list-none p-0">
+                        <li class="flex items-center">
+                            <a href="../../" class="hover:text-brand">Accueil</a>
+                            <svg class="w-3 h-3 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="../" class="hover:text-brand">Guides & Ressources</a>
+                            <svg class="w-3 h-3 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z">
+                                </path>
+                            </svg>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-brand font-medium">Glossaire PLV</span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">Le glossaire
+                    technique de la PLV carton</h1>
+
+                <div class="prose prose-lg prose-brand max-w-none text-gray-700">
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Parlez le même langage que nos ingénieurs production. Voici les termes essentiels à connaître
+                        pour bien piloter votre projet de totem.
+                    </p>
+
+                    <dl class="space-y-8 my-12">
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">BAT (Bon À Tirer)</dt>
+                            <dd class="text-gray-600">Document final validé par le client avant le lancement de
+                                l'impression. Il sert de référence contractuelle pour la conformité de la production.
+                            </dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">Cannelure</dt>
+                            <dd class="text-gray-600">Ondulation interne du carton située entre deux feuilles de papier
+                                (couvertures). C'est elle qui donne sa rigidité et sa résistance au totem.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">Contrecollage</dt>
+                            <dd class="text-gray-600">Procédé consistant à coller une feuille imprimée (souvent en
+                                offset) sur le carton brut. Permet une qualité d'impression supérieure au
+                                direct-numérique.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">Découpe Laser / Numérique</dt>
+                            <dd class="text-gray-600">Technique de découpe sans forme physique (forme de découpe),
+                                permettant de réaliser des petites séries ou des prototypes personnalisés très
+                                rapidement.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">FSC / PEFC</dt>
+                            <dd class="text-gray-600">Certifications environnementales garantissant que les fibres de
+                                bois utilisées pour le carton proviennent de forêts gérées durablement.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">Fronton</dt>
+                            <dd class="text-gray-600">Partie haute du totem, souvent découpée à la forme du logo ou d'un
+                                produit, servant à émerger visuellement dans les rayons.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">Micro-cannelure</dt>
+                            <dd class="text-gray-600">Carton très fin (type E ou F) dont les ondulations sont très
+                                resserrées. Offre un excellent état de surface pour l'impression.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">Pelliculage</dt>
+                            <dd class="text-gray-600">Fine pellicule de plastique (mat ou brillant) appliquée sur
+                                l'impression pour la protéger et lui donner un aspect premium.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">PLV (Publicité sur le Lieu de Vente)</dt>
+                            <dd class="text-gray-600">Ensemble des supports publicitaires et de signalétique disposés
+                                dans les magasins pour influencer le comportement de l'acheteur.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xl font-bold text-brand-dark mb-2">Rainurage</dt>
+                            <dd class="text-gray-600">Écrasement localisé du carton pour faciliter son pliage net et
+                                propre lors du montage du totem.</dd>
+                        </div>
+                    </dl>
+
+                    <div class="bg-gray-100 p-8 rounded-3xl mb-8 border border-gray-200">
+                        <p class="text-brand font-bold mb-4">Un terme vous manque ?</p>
+                        <p class="text-gray-600 mb-6 text-sm">Notre équipe est là pour vous expliquer chaque étape
+                            technique. N'hésitez pas à nous interroger lors de votre demande de devis.</p>
+                        <a href="../../contact/" class="text-brand font-bold hover:underline">Poser une question
+                            technique →</a>
+                    </div>
+                </div>
+
+                <!-- Horizontal links -->
+                <div
+                    class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-brand">
+                    <a href="../reussir-campagne-plv/" class="flex items-center hover:underline">←
+                        Précédent : Réussir sa campagne</a>
+                    <a href="../faire-totem-carton/" class="flex items-center hover:underline">Suivant : Faire un totem
+                        →</a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+                <div id="sidebar"></div>
+            </aside>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+</html>
