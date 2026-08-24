@@ -1,0 +1,112 @@
+---
+import ClusterLayout from '../../layouts/ClusterLayout.astro';
+import type { BreadcrumbItem } from '../../data/navigation';
+
+const title = 'Totem 3 Faces en Carton : Visibilité 360° pour votre PLV';
+const description =
+    'Le totem triangulaire 3 faces offre une visibilité à 360° en point de vente ou salon. Support PLV carton modulaire, personnalisable et éco-responsable.';
+const breadcrumb: BreadcrumbItem[] = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Formes & Types', href: '/totem-carton-publicitaire/' },
+    { name: 'Totem 3 faces' },
+];
+---
+
+<ClusterLayout title={title} description={description} cluster="totem-carton-publicitaire" breadcrumb={breadcrumb}>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">Totem 3 faces :
+        captez l'attention sous tous les angles</h1>
+
+    <div class="prose prose-lg prose-brand max-w-none text-gray-700">
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Le totem triangulaire 3 faces est le support de prédilection pour une visibilité maximale dans
+            les zones de passage dense comme les allées centrales de supermarchés ou les stands
+            d'exposition.
+        </p>
+
+        <div
+            class="my-12 bg-gray-50 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center border border-gray-100 shadow-inner">
+            <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-brand-dark mb-4">Pourquoi choisir le triptyque ?</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>Visibilité 360°</strong> : Communiquez sur 3 faces distinctes pour une
+                            lecture dans toutes les directions.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>Grande Stabilité</strong> : Sa forme triangulaire lui confère une
+                            assise naturelle parfaite au sol.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>Originalité</strong> : Il se démarque visuellement du totem elliptique
+                            classique.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="md:w-1/2 aspect-[3/4] bg-gray-200 rounded-2xl flex items-center justify-center p-12">
+                <svg class="w-24 h-24 text-gray-400 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L1 21h22L12 2zm0 4.14l7.63 12.86H4.37L12 6.14z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Usages recommandés</h2>
+        <p class="mb-6">
+            Grâce à sa forme robuste, il est idéal pour les <a
+                href="/totem-carton-secteurs/salon-professionnel/">salons professionnels</a> où il peut
+            servir de signalétique ou de support de présentation produit. En GMS, il permet d'afficher trois
+            messages différents (promotions, bénéfices produit, branding).
+        </p>
+
+        <div class="bg-brand-light p-6 rounded-2xl mb-8">
+            <p class="text-brand font-bold mb-0">💡 Le conseil expert :</p>
+            <p class="text-brand-secondary italic">"Combinez le totem 3 faces avec des accessoires comme un
+                porte-flyers sur l'une des faces pour transformer votre support de visibilité en véritable
+                outil de conversion."</p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Caractéristiques techniques</h2>
+        <table class="min-w-full divide-y divide-gray-200">
+            <tbody class="bg-white divide-y divide-gray-100">
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Matériau</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Carton micro-cannelure ou
+                        alvéolaire</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Impression</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Numérique UV ou Offset
+                        (quadri)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Options</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Porte-flyers, étagères,
+                        fronton personnalisé</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Horizontal links -->
+    <div
+        class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-brand">
+        <a href="/totem-carton-publicitaire/totem-elliptique/" class="flex items-center hover:underline">←
+            Précédent : Totem Elliptique</a>
+        <a href="/totem-carton-publicitaire/totem-pliable/" class="flex items-center hover:underline">Suivant : Totem Pliable →</a>
+    </div>
+</ClusterLayout>

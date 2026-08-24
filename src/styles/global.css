@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/*
+ * Thème de marque — équivalent Tailwind v4 de l'ancien `tailwind.config.js`.
+ * Chaque clé `--color-*` génère les utilitaires correspondants
+ * (bg-brand, text-brand-dark, border-brand-secondary, …).
+ */
+@theme {
+    --color-brand: #e63946;
+    --color-brand-dark: #1d3557;
+    --color-brand-light: #f1faee;
+    --color-brand-accent: #a8dadc;
+    --color-brand-secondary: #457b9d;
+
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+    /*
+     * Compat Tailwind v3 -> v4 : v4 fait passer la couleur de bordure et de
+     * placeholder par défaut à `currentColor`. On restaure les valeurs v3 pour
+     * que le rendu reste identique à celui du site d'origine.
+     */
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--color-gray-400);
+    }
+
+    body {
+        @apply text-gray-800 bg-white;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply inline-block px-8 py-3 bg-brand text-white font-bold rounded-full transition-transform hover:scale-105 active:scale-95 shadow-lg;
+    }
+
+    .link-underlined {
+        @apply relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand after:transition-all hover:after:w-full;
+    }
+}

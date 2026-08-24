@@ -1,0 +1,101 @@
+---
+import ClusterLayout from '../../layouts/ClusterLayout.astro';
+import type { BreadcrumbItem } from '../../data/navigation';
+
+const title = 'Totem Cube & Carré en Carton : Originalité et Géométrie | Kontfeel';
+const description =
+    'Le totem cube ou carré en carton offre un design moderne et 4 faces de communication. Idéal pour empiler ou créer des structures PLV dynamiques.';
+const breadcrumb: BreadcrumbItem[] = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Formes & Types', href: '/totem-carton-publicitaire/' },
+    { name: 'Totem Cube / Carré' },
+];
+---
+
+<ClusterLayout title={title} description={description} cluster="totem-carton-publicitaire" breadcrumb={breadcrumb}>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">Totem cube et carré :
+        jouez sur les volumes pour votre PLV</h1>
+
+    <div class="prose prose-lg prose-brand max-w-none text-gray-700">
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Le totem de section carrée ou cubique apporte une dimension architecturale à votre
+            communication. Avec ses 4 faces d'impression, il se prête particulièrement bien aux actions de
+            promotion transversales.
+        </p>
+
+        <div
+            class="my-12 bg-gray-50 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center border border-gray-100 shadow-inner">
+            <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-brand-dark mb-4">L'intérêt du format carré</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>4 Faces communicantes</strong> : Idéal pour présenter 4 produits
+                            différents ou une narration sur 4 côtés.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>Empilabilité</strong> : Les cubes peuvent s'empiler pour créer des
+                            pyramides ou des colonnes modulables.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>Assise parfaite</strong> : Une base carrée offre une stabilité
+                            inégalée sans besoin de pieds additionnels.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="md:w-1/2 aspect-[3/4] bg-gray-200 rounded-2xl flex items-center justify-center p-12">
+                <svg class="w-24 h-24 text-gray-400 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M21 16.5c0 .38-.21.71-.53.88l-7.97 4.44c-.31.17-.66.26-1 .26s-.69-.09-1-.26l-7.97-4.44c-.32-.17-.53-.5-.53-.88V7.5c0-.38.21-.71.53-.88l7.97-4.44c.31-.17.66-.26 1-.26s.69.09 1 .26l7.97 4.44c.32.17.53.5.53.88v9z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Le cube, l’outil du Storytelling</h2>
+        <p class="mb-6">
+            Le format cubique est parfait pour créer une expérience ludique en magasin. Vous pouvez utiliser
+            chaque face du cube pour une étape d'un processus, un bénéfice produit client, ou même pour un
+            jeu concours. Sa forme familière attire naturellement l'œil et invite au toucher et à la
+            curiosité.
+        </p>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Exemples d'applications</h2>
+        <ul class="list-disc pl-6 mb-8 space-y-2">
+            <li><strong>Totem de sol carré</strong> de grande taille pour le balisage de rayon.</li>
+            <li><strong>Cube empilé</strong> pour créer un totem modulable dont on peut changer l'ordre des
+                messages.</li>
+            <li><strong>Cube suspendu</strong> pour une visibilité haute sans emprise au sol.</li>
+        </ul>
+
+        <div class="bg-gray-100 p-8 rounded-3xl mb-8">
+            <p class="text-gray-800 font-bold mb-4">🛠️ Fabrication sur-mesure :</p>
+            <p class="text-gray-600">Nous réalisons vos structures cubiques avec des renforts internes si
+                vous souhaitez poser des produits sur les faces supérieures ou créer des arches.</p>
+        </div>
+    </div>
+
+    <!-- Horizontal links -->
+    <div
+        class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-brand">
+        <a href="/totem-carton-publicitaire/totem-pliable/" class="flex items-center hover:underline">←
+            Précédent : Totem Pliable</a>
+        <a href="/totem-carton-publicitaire/totem-3d-silhouette/" class="flex items-center hover:underline">Suivant : Totem 3D /
+            Silhouette →</a>
+    </div>
+</ClusterLayout>

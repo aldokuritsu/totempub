@@ -1,0 +1,97 @@
+---
+import ClusterLayout from '../../layouts/ClusterLayout.astro';
+import type { BreadcrumbItem } from '../../data/navigation';
+
+const title = 'Techniques d\'Impression sur Carton : Qualité & Rendu PLV | Kontfeel';
+const description =
+    'Impression numérique, offset ou sérigraphie : découvrez les techniques d\'impression pour vos totems en carton. Haute définition, couleurs éclatantes et finitions durables.';
+const breadcrumb: BreadcrumbItem[] = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Fabrication & Perso', href: '/fabrication-totem-carton/' },
+    { name: 'Impression' },
+];
+---
+
+<ClusterLayout title={title} description={description} cluster="fabrication-totem-carton" breadcrumb={breadcrumb}>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">Nos techniques
+        d'impression pour un rendu irréprochable</h1>
+
+    <div class="prose prose-lg prose-brand max-w-none text-gray-700">
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Le carton est un support exigeant. Pour obtenir des couleurs vibrantes et des détails précis,
+            nous utilisons les meilleures technologies d'impression adaptées à votre volume et à vos
+            exigences.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                <h3 class="text-xl font-bold text-brand-dark mb-4">L'Impression Numérique Directe (HD)</h3>
+                <p class="text-sm mb-4">Idéale pour les petites et moyennes séries ainsi que pour la
+                    personnalisation à l'unité.</p>
+                <ul class="text-xs space-y-2 opacity-80">
+                    <li>✅ Pas de frais de plaques ou de clichés</li>
+                    <li>✅ Délais ultra-rapides</li>
+                    <li>✅ Rendu photographique haute définition</li>
+                </ul>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                <h3 class="text-xl font-bold text-brand-dark mb-4">L'Offset avec Contrecollage</h3>
+                <p class="text-sm mb-4">La référence pour les grandes séries nécessitant une finesse absolue
+                    et des finitions LUXE.</p>
+                <ul class="text-xs space-y-2 opacity-80">
+                    <li>✅ Coût dégressif à partir de 500 exemplaires</li>
+                    <li>✅ Qualité de vernis et de pelliculage inégalée</li>
+                    <li>✅ Respect parfait de vos teintes Pantone</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Comment choisir sa finition ?</h2>
+        <p class="mb-6">
+            L'impression ne fait pas tout, c'est la finition qui donne le ton final à votre totem. Un
+            <strong>pelliculage mat</strong> apportera de la douceur et de l'élégance, parfait pour un
+            secteur cosmétique ou luxe. Un <strong>vernis brillant</strong>, à l'inverse, dynamisera les
+            couleurs et attirera l'œil dans les rayons GMS plus bruyants visuellement.
+        </p>
+
+        <div class="bg-brand text-white p-8 rounded-3xl mb-12 shadow-inner">
+            <p class="text-xl font-bold mb-4">Encres écologiques</p>
+            <p class="mb-0 text-sm italic opacity-90">"Toutes nos impressions utilisent des encres à base
+                d'eau ou végétales, sans solvants volatils, pour un impact environnemental réduit et une
+                recyclabilité totale du totem."</p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Préparation de vos fichiers</h2>
+        <p class="mb-6">
+            Afin de vous garantir un résultat optimal, nos équipes de PAO vérifient systématiquement vos
+            fichiers avant impression. Nous vous fournissons des <strong>gabarits (tracés de
+                découpe)</strong> précis au format Illustrator (.ai) incluant les fonds perdus et les zones
+            de pliage.
+        </p>
+
+        <div class="bg-gray-100 p-8 rounded-3xl mb-8 flex items-center gap-6">
+            <div class="hidden md:block">
+                <svg class="w-16 h-16 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                    </path>
+                </svg>
+            </div>
+            <div>
+                <p class="text-gray-800 font-bold mb-2">Bon à Savoir :</p>
+                <p class="text-gray-600 text-sm">Le rendu des couleurs sur carton brun est différent du
+                    carton blanc. Nous vous conseillons sur le choix du support en fonction de votre charte
+                    graphique.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Horizontal links -->
+    <div
+        class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-brand">
+        <a href="/fabrication-totem-carton/personnalisation/" class="flex items-center hover:underline">←
+            Précédent : Personnalisation</a>
+        <a href="/fabrication-totem-carton/materiaux-carton/" class="flex items-center hover:underline">Suivant : Matériaux Carton
+            →</a>
+    </div>
+</ClusterLayout>

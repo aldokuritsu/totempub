@@ -1,0 +1,98 @@
+---
+import ClusterLayout from '../../layouts/ClusterLayout.astro';
+import type { BreadcrumbItem } from '../../data/navigation';
+
+const title = 'Glossaire PLV & Totem Carton : Lexique des Termes Techniques | Kontfeel';
+const description =
+    'Maîtrisez le vocabulaire de la PLV : fronton, rainurage, micro-cannelure, BAT, CMJN... Notre glossaire complet pour mieux comprendre l\'univers du totem carton.';
+const breadcrumb: BreadcrumbItem[] = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Guides & Ressources', href: '/guide-totem-carton/' },
+    { name: 'Glossaire PLV' },
+];
+---
+
+<ClusterLayout title={title} description={description} cluster="guide-totem-carton" breadcrumb={breadcrumb}>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">Le glossaire
+        technique de la PLV carton</h1>
+
+    <div class="prose prose-lg prose-brand max-w-none text-gray-700">
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Parlez le même langage que nos ingénieurs production. Voici les termes essentiels à connaître
+            pour bien piloter votre projet de totem.
+        </p>
+
+        <dl class="space-y-8 my-12">
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">BAT (Bon À Tirer)</dt>
+                <dd class="text-gray-600">Document final validé par le client avant le lancement de
+                    l'impression. Il sert de référence contractuelle pour la conformité de la production.
+                </dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">Cannelure</dt>
+                <dd class="text-gray-600">Ondulation interne du carton située entre deux feuilles de papier
+                    (couvertures). C'est elle qui donne sa rigidité et sa résistance au totem.</dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">Contrecollage</dt>
+                <dd class="text-gray-600">Procédé consistant à coller une feuille imprimée (souvent en
+                    offset) sur le carton brut. Permet une qualité d'impression supérieure au
+                    direct-numérique.</dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">Découpe Laser / Numérique</dt>
+                <dd class="text-gray-600">Technique de découpe sans forme physique (forme de découpe),
+                    permettant de réaliser des petites séries ou des prototypes personnalisés très
+                    rapidement.</dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">FSC / PEFC</dt>
+                <dd class="text-gray-600">Certifications environnementales garantissant que les fibres de
+                    bois utilisées pour le carton proviennent de forêts gérées durablement.</dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">Fronton</dt>
+                <dd class="text-gray-600">Partie haute du totem, souvent découpée à la forme du logo ou d'un
+                    produit, servant à émerger visuellement dans les rayons.</dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">Micro-cannelure</dt>
+                <dd class="text-gray-600">Carton très fin (type E ou F) dont les ondulations sont très
+                    resserrées. Offre un excellent état de surface pour l'impression.</dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">Pelliculage</dt>
+                <dd class="text-gray-600">Fine pellicule de plastique (mat ou brillant) appliquée sur
+                    l'impression pour la protéger et lui donner un aspect premium.</dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">PLV (Publicité sur le Lieu de Vente)</dt>
+                <dd class="text-gray-600">Ensemble des supports publicitaires et de signalétique disposés
+                    dans les magasins pour influencer le comportement de l'acheteur.</dd>
+            </div>
+            <div>
+                <dt class="text-xl font-bold text-brand-dark mb-2">Rainurage</dt>
+                <dd class="text-gray-600">Écrasement localisé du carton pour faciliter son pliage net et
+                    propre lors du montage du totem.</dd>
+            </div>
+        </dl>
+
+        <div class="bg-gray-100 p-8 rounded-3xl mb-8 border border-gray-200">
+            <p class="text-brand font-bold mb-4">Un terme vous manque ?</p>
+            <p class="text-gray-600 mb-6 text-sm">Notre équipe est là pour vous expliquer chaque étape
+                technique. N'hésitez pas à nous interroger lors de votre demande de devis.</p>
+            <a href="/contact/" class="text-brand font-bold hover:underline">Poser une question
+                technique →</a>
+        </div>
+    </div>
+
+    <!-- Horizontal links -->
+    <div
+        class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-brand">
+        <a href="/guide-totem-carton/reussir-campagne-plv/" class="flex items-center hover:underline">←
+            Précédent : Réussir sa campagne</a>
+        <a href="/guide-totem-carton/faire-totem-carton/" class="flex items-center hover:underline">Suivant : Faire un totem
+            →</a>
+    </div>
+</ClusterLayout>

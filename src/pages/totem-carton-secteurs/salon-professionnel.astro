@@ -1,0 +1,102 @@
+---
+import ClusterLayout from '../../layouts/ClusterLayout.astro';
+import type { BreadcrumbItem } from '../../data/navigation';
+
+const title = 'Totem Carton pour Salon Professionnel & Expo : Stand Dynamique | Kontfeel';
+const description =
+    'Habillez votre stand avec nos totems en carton pour salons et foires. Stand-parapluie, triptyques et silhouettes pour une communication événementielle percutante.';
+const breadcrumb: BreadcrumbItem[] = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Secteurs & Usages', href: '/totem-carton-secteurs/' },
+    { name: 'Salon Professionnel' },
+];
+---
+
+<ClusterLayout title={title} description={description} cluster="totem-carton-secteurs" breadcrumb={breadcrumb}>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">Salons et foires :
+        le totem carton comme outil de conversion stand</h1>
+
+    <div class="prose prose-lg prose-brand max-w-none text-gray-700">
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Sur un salon, vous avez quelques secondes pour attirer le visiteur vers votre stand. Le totem
+            publicitaire en carton est votre meilleur ambassadeur : visuel, informatif et facile à
+            transporter.
+        </p>
+
+        <div
+            class="my-12 bg-gray-50 rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center border border-gray-100 shadow-inner">
+            <div class="md:w-1/2">
+                <h3 class="text-2xl font-bold text-brand-dark mb-4">Atouts pour l'événementiel</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>Zéro Stress Logistique</strong> : Poids plume et encombrement réduit
+                            dans votre coffre de voiture ou en fret.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>Signalétique Intelligente</strong> : Guidez le visiteur, présentez vos
+                            services ou servez de support de conférence.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-brand mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span><strong>Finition Premium</strong> : Options de vernis et d'impression HD pour
+                            une image de marque irréprochable.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="md:w-1/2 aspect-square bg-white rounded-2xl flex items-center justify-center p-8 shadow-xs">
+                <svg class="w-24 h-24 text-gray-400 opacity-60" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Optimisez l'espace de votre stand</h2>
+        <p class="mb-6">
+            L'espace sur un stand de salon est souvent compté et coûteux. Contrairement aux kakémonos
+            classiques qui peuvent être instables ou encombrants au niveau des pieds, le totem en carton
+            tient tout seul et offre une surface de communication rigide. Il permet de structurer votre
+            espace en créant des cloisons ou des points d'intérêt sans alourdir la décoration.
+        </p>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Nos conseils pour votre prochain salon</h2>
+        <ul class="list-disc pl-6 mb-8 space-y-2">
+            <li><strong>Mixez les formats</strong> : Un totem 3 faces pour l'accueil et des petits totems de
+                comptoir sur vos présentoirs produits.</li>
+            <li><strong>Misez sur la silhouette</strong> : Un totem découpé à la forme de votre logo ou de
+                votre produit phare marquera les esprits.</li>
+            <li><strong>Éco-conception</strong> : Affichez votre engagement environnemental avec une PLV
+                100% carton recyclable.</li>
+        </ul>
+
+        <div class="bg-brand-light border-l-4 border-brand p-8 rounded-r-3xl mb-8">
+            <p class="text-brand-dark font-medium italic">"Sur un salon, le totem est l'équipage au sol de
+                votre communication. Il reste là quand vos commerciaux sont occupés."</p>
+        </div>
+    </div>
+
+    <!-- Horizontal links -->
+    <div
+        class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-brand">
+        <a href="/totem-carton-secteurs/grande-distribution/" class="flex items-center hover:underline">←
+            Précédent : Grande Distribution</a>
+        <a href="/totem-carton-secteurs/commerce-boutique/" class="flex items-center hover:underline">Suivant : Commerce &
+            Boutique →</a>
+    </div>
+</ClusterLayout>

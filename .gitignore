@@ -30,3 +30,11 @@ pnpm-debug.log*
 .fseventsd
 .Spotlight-V100
 .Trashes
+
+
+#Ignore cursor AI rules
+.cursor/rules/codacy.mdc
+
+# Astro
+.astro/
+dist/

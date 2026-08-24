@@ -1,0 +1,105 @@
+---
+import ClusterLayout from '../../layouts/ClusterLayout.astro';
+import type { BreadcrumbItem } from '../../data/navigation';
+
+const title = 'Totem Carton vs Autres PLV (PVC, Métal, Bois) : Le Comparatif | Kontfeel';
+const description =
+    'Pourquoi choisir le carton pour vos totems publicitaires ? Comparaison détaillée avec le PVC, le métal et le bois : coût, impact écologique et praticité.';
+const breadcrumb: BreadcrumbItem[] = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Guides & Ressources', href: '/guide-totem-carton/' },
+    { name: 'Carton vs Autres PLV' },
+];
+---
+
+<ClusterLayout title={title} description={description} cluster="guide-totem-carton" breadcrumb={breadcrumb}>
+    <h1 class="text-4xl md:text-5xl font-extrabold text-brand-dark mb-6 leading-tight">Match : le carton
+        face au PVC, au métal et au bois</h1>
+
+    <div class="prose prose-lg prose-brand max-w-none text-gray-700">
+        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Le choix du matériau est déterminant pour la réussite de votre campagne PLV. Si le carton domine
+            le marché, c'est pour des raisons précises de coût, de flexibilité et d'image.
+        </p>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Totem Carton vs Totem PVC / Plastique</h2>
+        <p class="mb-6">
+            Le <strong>PVC</strong> est imperméable, ce qui est son seul véritable avantage pour
+            l'extérieur. En revanche, il est plus coûteux, plus lourd à transporter et pose un problème
+            majeur de recyclage. Le <strong>carton</strong> l'emporte haut la main pour l'intérieur : il
+            offre un meilleur rendu de couleurs et véhicule une image bien plus positive auprès de
+            consommateurs de moins en moins tolérants au plastique.
+        </p>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Totem Carton vs Totem Métal / Permanent</h2>
+        <p class="mb-6">
+            Le <strong>métal</strong> est réservé aux PLV permanentes qui doivent durer plusieurs années.
+            Mais son investissement est lourd. Le <strong>carton</strong> permet de renouveler votre message
+            tous les 3 ou 6 mois pour le prix d'une seule structure métallique. En marketing, la nouveauté
+            attire : changer régulièrement de totem en carton est souvent plus efficace que de garder la
+            même structure métallique pendant 2 ans.
+        </p>
+
+        <div class="my-12 overflow-x-auto border border-gray-100 rounded-3xl">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50 text-brand-dark font-bold">
+                    <tr>
+                        <th class="px-6 py-4 text-left">Critère</th>
+                        <th class="px-6 py-4 text-left text-brand">Carton</th>
+                        <th class="px-6 py-4 text-left">Autres (PVC/Métal)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100 text-sm">
+                    <tr>
+                        <td class="px-6 py-4 font-bold">Coût unitaire</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">Excellent (Bas)</td>
+                        <td class="px-6 py-4">Élevé</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-bold">Impact Écologique</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">Excellent (Recyclable)</td>
+                        <td class="px-6 py-4 text-red-600">Mauvais (Plastique)</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-bold">Logistique</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">Léger / À plat</td>
+                        <td class="px-6 py-4">Lourd / Volumineux</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 font-bold">Délais de fabrication</td>
+                        <td class="px-6 py-4 text-green-600 font-bold">Rapide (7-10 j)</td>
+                        <td class="px-6 py-4">Long (4-8 semaines)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="text-2xl font-bold text-brand-dark mb-6">Totem Carton vs Totem Bois</h2>
+        <p class="mb-6">
+            Le <strong>bois</strong> a une image de noblesse. Cependant, le bois certifié et de qualité est
+            très cher. Pour obtenir cet aspect naturel sans en payer le prix, nos impressions sur
+            <strong>carton Kraft brun</strong> imitent merveilleusement bien l'esthétique du bois tout en
+            conservant la légèreté et le prix du carton.
+        </p>
+
+        <div class="bg-gray-50 p-8 rounded-3xl mb-8 border border-gray-100 flex gap-6">
+            <div
+                class="w-12 h-12 flex-shrink-0 bg-brand text-white rounded-full flex items-center justify-center font-bold text-2xl">
+                !</div>
+            <div>
+                <p class="text-brand-dark font-bold mb-2">Verdict Final :</p>
+                <p class="text-gray-600 text-sm">Si votre opération est de moins de 12 mois et se déroule en
+                    intérieur, le carton est le choix rationnel, économique et écologique imbattable.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Horizontal links -->
+    <div
+        class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center text-sm font-bold text-brand">
+        <a href="/guide-totem-carton/choisir-totem-carton/" class="flex items-center hover:underline">←
+            Précédent : Choisir son totem</a>
+        <a href="/guide-totem-carton/reussir-campagne-plv/" class="flex items-center hover:underline">Suivant : Réussir sa
+            campagne →</a>
+    </div>
+</ClusterLayout>
